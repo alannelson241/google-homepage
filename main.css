@@ -1,12 +1,35 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+.about-store {
+    position:relative;
+}
+
+.user-links {
+    position:static;
+    top: 0;
+    right: 0;
+}
+
 #google-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30%;
+    margin-bottom: 3%;
 }
 
-#search {
+#form-div {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 3%;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
 }
