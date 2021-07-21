@@ -2,14 +2,44 @@
     font-family: Arial, sans-serif;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#about-store-div {
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+
+}
+
 .about-store {
-    position:relative;
+    padding-left: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+#user-links-div {
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
 }
 
 .user-links {
-    position:static;
-    top: 0;
-    right: 0;
+    padding-right: 20px;
+    font-size: 12px;
+    color: black;
 }
 
 #google-logo {
@@ -32,4 +62,10 @@
     font-size: 14px;
     height: 36px;
     min-width: 54px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
