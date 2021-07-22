@@ -1,17 +1,18 @@
 *{
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 a:link {
-    color: black;
+    /*color: black;*/
     text-decoration: none;
 }
 a:visited {
-    color: black;
+    /*color: black;*/
     text-decoration: none;
 }
 a:hover {
-    color: black;
+    /*color: black;*/
     text-decoration: underline;
 }
 
@@ -20,40 +21,48 @@ a:hover {
     top: 0;
     left: 0;
     padding-top: 20px;
+    margin-left: 10px;
 
 }
 
 .about-store {
     padding: 12px;
     font-size: 14px;
-    color: black;
+    color: rgba(0,0,0,0.87);
 }
 
 #user-links-div {
     position:fixed;
+    display: flex;
     top: 0;
     right: 0;
-    padding-top: 20px;
-    margin-right: 5px;
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
 .user-links {
     padding: 12px;
     font-size: 12px;
-    color: black;
+    color: rgba(0,0,0,0.87);
+    align-items: center;
+}
+
+#apps-icon {
+    color: #5f6368;
 }
 
 #google-account {
     color: white;
     background-color: #4285f4;
     font-weight: bold;
+    height: 20px;
+    padding: 10px 14px;
 
 }
 
 #body-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     min-height: 100%;
 }
 
@@ -66,34 +75,78 @@ a:hover {
 }
 
 #form-div {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     width: 833px;
+    justify-content: center;
 }
 
-#search {
+#input-box {
+    display: flex;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     height: 44px;
-    width: 480px;
+    width: 560px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
+#input-box:hover {
+    box-shadow: 1px 1px 1px 1px #dfe1e5;
+}
+
+#search-icon {
+    font-size: 20px;
+    padding-right: 5px;
+    color: #9aa0a6;
+}
+
+#search {
+    height: 40px;
+    width: 500px;
+    border: none;
+    font-size: 16px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+
 .submit-button {
-    margin-top: 3%;
+    display: inline-flex;
     background-color: #f8f9fa;
     font-size: 14px;
     height: 36px;
     min-width: 54px;
+    border: none;
+    color: #3c4043;
+    margin: 20px 5px;
+    padding: 0 20px;
+}
+
+.submit-button:hover {
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    box-shadow: 1px 1px #dfe1e5;
 }
 
 footer {
     display: flex;
+    position: fixed;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content:flex-end;
     font-size: 14px;
+    color: #70757a;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
 }
 
 #business-div {
@@ -102,10 +155,14 @@ footer {
     left: 0;
     padding-bottom: 20px;
     padding-left: 20px;
+    color: #70757a;
+
 }
 
 .business-links {
     padding: 12px;
+    color: #70757a;
+
 }
 
 #settings-div {
@@ -118,4 +175,5 @@ footer {
 
 .settings-links {
     padding: 12px;
+    color: #70757a;
 }
